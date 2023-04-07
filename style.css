@@ -90,7 +90,7 @@ a{
 
 
 .img-nav{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 2rem;
     display: flex; 
     flex-wrap: wrap;
@@ -105,9 +105,21 @@ a{
     background-size: cover; 
 }
 .img-nav p{
-    border-bottom: 6px solid black;
+    /* border-bottom: 6px solid black; */
 }
-
+.img-nav .box1,.box2,.box3{
+    /* border: 5px solid red; */
+    padding-left:10%;
+}
+.box4{
+    padding-left:17%;
+    margin-top: 3rem;
+    /* border: 3px solid #263238; */
+}
+.box5{
+    padding-right: 12%;
+    margin-top: 3rem;
+}
 /* #############Footer Styling########## */
 
 .footer{
