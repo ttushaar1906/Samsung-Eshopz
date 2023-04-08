@@ -42,9 +42,7 @@ h1, h2, h3{
     padding-top:1rem ;
     padding-right: 1rem;
 }
- /* .container{
-    padding: 0 1rem;
-}  */
+
  .container p {
     max-width: 1200px;
     display: flex;
@@ -81,9 +79,6 @@ a{
     justify-content:space-between ;
     align-items: center;
  }
-
-
-
 
 
 /* ############# img ############# */
@@ -135,3 +130,78 @@ a{
 .footer p{
     font-size: 1.5rem;
 } 
+
+
+
+/* ############ Phones Page Styling ############ */
+.container-phones{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+
+
+
+
+/* ############### home Section styling ######### */
+.hsection{
+    margin-top: 2rem;
+    display: flex; 
+    /* flex-wrap: wrap; */
+    justify-content: space-between; 
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.hsection .query{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    border: 2px solid  black;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    /* width: 400px; */
+    height: 100%;
+}
+.hsection .query h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    /* border: 4px solid blue; */
+}
+
+.hsection .query p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* border: 3px solid purple; */
+    margin: 1rem;
+    /* width: 300px; */
+}
+.section-header h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 4rem;
+}
+
+.section-help .h-img{
+    position: relative;
+    /* height: 80vh; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: cover;
+}
+
+
+.section-help{
+max-width: 1200px;
+width: 90%;
+margin: 0 auto;
+border: 2px solid black;
+}
+/* ########## color utility ######### */
+.text-black{
+    color: black;
+}
