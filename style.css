@@ -163,7 +163,7 @@ a{
     padding: 0.5rem;
     border-radius: 20px;
     width: 380px;
-    height: 160px;
+    height: 120px;
     /* justify-content: space-evenly; */
 }
 .hsection .query h3{
@@ -207,7 +207,7 @@ a{
     position: absolute;
     top: 80%;
     left: 20%;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
 }
 /* .section-help a h1{
     transition: .3s ease-in-out;
@@ -223,8 +223,9 @@ a{
     border: 2px solid black;
     border-radius: 25px;
     padding: 1rem;
+    background-color: black;
+    color: #f0eded;
  }
-
 
 /* ######### Contain US ############ */
 /* .contant-form{
@@ -239,4 +240,63 @@ a{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+} */
+
+/* ############# About Us Styling ########## */
+
+.aboutus-section img{
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+.aboutus-section .aboutus-container h3{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.aboutus-section .aboutus-container h2{
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.aboutus-section .aboutus-container p{
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    font-weight: 400;
+    font-size: 1.6rem;
+}   
+.aboutus-section .about-para1 p{
+        padding: 5rem;
+        margin: 2rem;
+        text-align: center;
+}
+/* .about-para2{
+    margin-top: 2rem;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutus-section .about-para2 h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.aboutus-section .about-para2 .img{
+    width: 400px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+}   
+.aboutus-section .about-para2 .img img{
+    align-items: center;
+    display: flex;
 } */
