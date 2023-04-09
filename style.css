@@ -157,13 +157,14 @@ a{
 .hsection .query{
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
+    /* text-align: left; */
     border: 2px solid  black;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 20px;
-    /* width: 400px; */
-    height: 100%;
+    width: 380px;
+    height: 160px;
+    /* justify-content: space-evenly; */
 }
 .hsection .query h3{
     font-size: 1.6rem;
@@ -185,23 +186,57 @@ a{
     padding-top: 4rem;
 }
 
-.section-help .h-img{
+.section-help img{
     position: relative;
-    /* height: 80vh; */
+    height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position: cover;
+    background-size: cover;
+    /* margin: 1rem; */
 }
-
 
 .section-help{
-max-width: 1200px;
-width: 90%;
-margin: 0 auto;
-border: 2px solid black;
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
 }
+.section-help .hi h1{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-size: 2.5rem;
+}
+/* .section-help a h1{
+    transition: .3s ease-in-out;
+} */
 /* ########## color utility ######### */
 .text-black{
     color: black;
 }
+ .section-help a h1:hover{
+    color: #f0eded;
+ }  
+ .section-help a h1{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+ }
+
+
+/* ######### Contain US ############ */
+/* .contant-form{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 50%;
+    justify-content: center;
+}
+
+.contant-form .form-wrapper{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+} */
