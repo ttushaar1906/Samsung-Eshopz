@@ -121,12 +121,18 @@ a{
     background-color:  #263238;
     color: #f4f4f4; 
     text-align : center;
+   margin-top: 2rem;
 }
 
+.footer .social-media a{
+    color: #f4f4f4; 
+}
 .social-media i{
     padding:1em;
 }
-
+.social-media i:hover{
+    border-bottom: 2px solid #f4f4f4;
+}
 .footer p{
     font-size: 1.5rem;
 } 
@@ -155,6 +161,7 @@ a{
     /* border: 2px solid red; */
 }
 .hsection .query{
+    background: #c0c4c4;
     display: flex;
     flex-wrap: wrap;
     /* text-align: left; */
@@ -183,7 +190,7 @@ a{
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .section-help img{
@@ -193,15 +200,16 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* margin: 1rem; */
+/* margin-top: 2rem; */
 }
 
 .section-help{
     position: relative;
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     border: 2px solid black;
+    margin-top: 2rem;
 }
 .section-help .hi h1{
     position: absolute;
@@ -301,3 +309,4 @@ a{
     padding: 0.5rem;
     font-size: 1rem;
 }
+
