@@ -51,7 +51,7 @@ h1, h2, h3{
     padding: 10px 0;
 }
 .container nav{
-    background: #f0eded;
+    background: #c0c4c4;
 }
 .container .sub-main h1{
     text-align: center;
@@ -228,19 +228,11 @@ a{
  }
 
 /* ######### Contain US ############ */
-/* .contant-form{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aqua;
-    width: 50%;
-    justify-content: center;
+.contant-section img{
+    width: 100%;
+    border: 3px solid red;
+    margin-top:2rem;
 }
-
-.contant-form .form-wrapper{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 /* ############# About Us Styling ########## */
 
@@ -276,27 +268,36 @@ a{
         margin: 2rem;
         text-align: center;
 }
-/* .about-para2{
+.aboutus-section h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about-para2{
     margin-top: 2rem;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    /* border: 3px solid red; */
 }
-
-.aboutus-section .about-para2 h2{
-    text-align: center;
+.about-para2 h3{
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 1rem;
 }
 .aboutus-section .about-para2 .img{
     width: 400px;
+    /* height: 0px; */
+    /* border: 2px solid black; */
+    margin: 1rem;
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
 }   
-.aboutus-section .about-para2 .img img{
-    align-items: center;
-    display: flex;
-} */
+.about-para2 p{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
