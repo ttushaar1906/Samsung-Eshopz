@@ -205,6 +205,27 @@ a{
     color: #f0eded;
  }
 
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
 /* ######### Contain US ############ */
 
 .contant-section img{
@@ -359,7 +380,7 @@ a{
 }
 .phones-section h1{
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     padding-top: 2rem;
     /* border: 2px solid blueviolet; */
@@ -376,64 +397,65 @@ a{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 .phones-section .phone-display{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(232, 232, 232);
     width: 25;
     padding: 2rem;
     margin: 2rem;
 }
-.phone-container a h2{
-display: inline-block;
-/* gap: 30px; */
-padding:1rem ;
-/* border-bottom: 1px solid black;  */
-}
 
+.phones-section .phones-link{
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.link-contant a h2:hover {
+    border-bottom: 2px solid black;
+} 
+.TandC{
+    border: 2px solid red;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-weight: 200;
+}
+footer .menu{
+    border: 1px solid black;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
 
 /* #### swiper #### */
-.container-img{
-    width: 450px;
-}
-.items-img{
-    display: grid;
-    grid-auto-flow: column;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    /* overflow-y: auto; */
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-.items-img::-webkit-scrollbar{
-    display: none;
-}
-.card{
-    scroll-snap-align: start;
-    border-radius: 30px;
-    min-height: 200px;
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card:nth-child(odd){
-    background: linear-gradient(-229dog,#c0c4c4),#f0eded;
-}
 
-.container-img ::-webkit-scrollbar {
-    display: none;
-    overflow: auto;
+.swiper {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    margin-top:2rem ;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    scroll-snap-type:x mandatory;
-}
-.container-img .items-img {
-    flex-shrink: 0;
-    scroll-snap-align: start;
-}
-.container-img .items-img img{
-    width: 300px;
-    padding: 2rem;
-}
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
