@@ -56,6 +56,7 @@ h1, h2, h3{
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 .container nav .nav-items{
@@ -205,26 +206,10 @@ a{
     color: #f0eded;
  }
 
- .swiper {
-      width: 100%;
-      height: 100%;
-    }
+ 
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    
+    
 
 /* ######### Contain US ############ */
 
@@ -458,4 +443,22 @@ footer .menu{
     margin-left: auto;
     margin-right: auto;
   }
- 
+ /* ################ Earbuds ########## */
+ .devices-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem
+ }
+ .devices-section .devices-display{
+  border: 2px solid black;
+  background-color: rgb(232, 232, 232);
+  width: 25;
+  padding: 2rem;
+  margin: 2rem;
+  /* margin: auto; */
+ }
+ .devices-section .devices-display img{
+    width: 200px;
+    border: 2px solid rebeccapurple;
+ }
