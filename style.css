@@ -124,7 +124,21 @@ a{
     padding-top: 1rem;
     font-weight:500 ;
 } 
-
+footer .menu{
+    color: white;
+    background-color: #263238;;
+}
+footer .menu a{
+    color: white;
+    background-color: #263238;;
+}
+footer .menu p{
+    text-align: center;
+}
+footer .menu .social-media i{
+    justify-content: center;
+    text-align: center;
+}
 /* ############### home Section styling ######### */
 .hsection{
     margin-top: 2rem;
@@ -406,6 +420,7 @@ a{
     padding: 2rem;
     margin-top: 2rem;
     font-weight: 200;
+    background-color: rgb(232, 232, 232);
 }
 footer .menu{
     border: 1px solid black;
@@ -448,17 +463,19 @@ footer .menu{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 2rem
+    margin-top: 2rem;
+    /* width: 200px; */
  }
  .devices-section .devices-display{
   border: 2px solid black;
   background-color: rgb(232, 232, 232);
-  width: 25;
+  width: 25%;
   padding: 2rem;
   margin: 2rem;
-  /* margin: auto; */
  }
  .devices-section .devices-display img{
     width: 200px;
-    border: 2px solid rebeccapurple;
+ }
+ .ear-ac{
+    padding-top: 2rem;
  }
