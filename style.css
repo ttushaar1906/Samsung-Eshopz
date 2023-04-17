@@ -124,9 +124,10 @@ a{
     padding-top: 1rem;
     font-weight:500 ;
 } 
-footer .menu{
+.menu{
     color: white;
-    background-color: #263238;;
+    background-color: #263238;
+    height: 140px;    
 }
 footer .menu a{
     color: white;
@@ -134,10 +135,10 @@ footer .menu a{
 }
 footer .menu p{
     text-align: center;
+    padding: 1rem;
 }
-footer .menu .social-media i{
-    justify-content: center;
-    text-align: center;
+.menu .social-media{
+     text-align: center;
 }
 /* ############### home Section styling ######### */
 .hsection{
