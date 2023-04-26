@@ -476,7 +476,9 @@ footer .menu{
  }
  .devices-section .devices-display img{
     width: 200px;
- }
+    display: flex;
+    margin: auto;
+}
  .ear-ac{
     padding-top: 2rem;
  }
