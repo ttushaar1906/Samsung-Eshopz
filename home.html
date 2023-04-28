@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Samsung E-Shop |</title>
 </head>
 <body>
@@ -31,19 +32,53 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="./img/home tv A.webp" alt="tv">
+        <p> Neo QLED 4K Smart TV</p>
+            <p class="sub-adv">
+            Starting from Rs 80990.00</p>
+            <a href="./tv.html">
+            <h4>Buy Now</h4>
+            </a>
       </div>
+
       <div class="swiper-slide">
         <img src="./img/home ref A.webp" alt="ref" srcset="">
+        <p> Refrigerators</p>
+            <!-- <p class="sub-adv">
+            Starting from Rs 80990.00</p> -->
+            <a href="">
+                <h4  id="fbutton">Buy Now</h4>  
+                <script>
+                $(document).ready(function(){
+                    $("#fbutton").click(function(){
+                      alert("Out Of Stock!!!");
+                    });
+                  })</script>
+            </a>
       </div>
       <div class="swiper-slide">
         <img src="./img/home phone a.webp" alt="home" srcset="">
+        <p>Samsung Galaxy S Series</p>
+            <p class="sub-adv">
+            Starting from Rs 52999.00</p>
+            <a href="./galaxy S.html">
+            <h4>Buy Now</h4>
+          </a>
       </div>
+
       <div class="swiper-slide">
         <img src="./img/home washing machine A.webp" alt="washing machine" srcset="">
       </div>
+
       <div class="swiper-slide">
         <img src="./img/home phone 2 a.webp" alt="phone flod" srcset="">
+        <p>Samsung Galaxy Z Series</p>
+        <p class="sub-adv">
+        Starting from Rs 89999.00</p>
+        <a href="./galaxy S.html">
+        <h4>Buy Now</h4>
+      </a>
       </div>
+
       <div class="swiper-slide">
         <img src="./img/home watches.webp" alt="Watches" srcset="">
       </div>

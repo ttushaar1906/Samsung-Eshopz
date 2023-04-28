@@ -459,6 +459,45 @@ footer .menu{
     margin-left: auto;
     margin-right: auto;
   }
+
+.swiper-wrapper .swiper-slide img{
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    margin-top:2rem ;
+    width: 100%;
+  }
+.swiper-wrapper .swiper-slide h4{
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  background-color:black;
+  color: white;
+  border-radius: 80px;
+  padding: 1rem;
+  font-weight: 300;
+}
+.swiper-wrapper .swiper-slide h4:hover{
+    background-color: #4098e0;
+    color: #000;
+    font-weight: bold;
+}
+.swiper-wrapper .swiper-slide p{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.swiper-wrapper .swiper-slide .sub-adv{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 62%;
+    left: 12%;
+}
  /* ################ Earbuds ########## */
  .devices-section{
     display: flex;
@@ -482,3 +521,22 @@ footer .menu{
  .ear-ac{
     padding-top: 2rem;
  }
+
+
+ /* ######### Buy Now Button ########### */
+
+ .buy-now-btn{
+    background-color: #000;
+    color: white;
+    border-radius: 80px;
+    padding: 1.5rem;
+    margin: 1rem;
+ }
+
+
+ /* ###### add to cart ########## */
+.add-to-cart{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
