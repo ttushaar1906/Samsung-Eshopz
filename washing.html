@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./img/samsung logo.png">
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
     <title>Samsung E-Shop | Washing Machines</title>
@@ -33,17 +34,55 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./img/home washing machine A.webp" alt="" srcset="">
+              <p>Offers so fab everyone will grab.</p>
+        <p class="sub-adv">
+       Get Heavy Discounts !</p>
+        <a href=""><!--link to direct product-->
+        <h4>Buy Now</h4>
+      </a>
             </div>
+
           <div class="swiper-slide">
             <img src="./img/washing machine black .webp" alt="black">
-        </div>
+            <p>8.0 kg Ecobubble™ Front Load </p>
+            <p class="sub-adv">
+            Superior Ecobubble Cleaning</p>
+            <a href=""><!--link to direct product-->
+            <h4>Buy Now</h4>
+          </a>
+          </div>
+
           <div class="swiper-slide">
             <img src="./img/washing machine white .webp" alt="white">
+            <p>7.0 kg Ecobubble™ Front Load </p>
+            <p class="sub-adv">
+            Superior AI Control</p>
+            <a href=""><!--link to direct product-->
+            <h4>Buy Now</h4>
+          </a>
         </div>
+
           <div class="swiper-slide">
-            <img src="./img/washing machine white A.webp" ></div>
+            <img src="./img/washing machine white A.webp" >
+            <p>6.5 kg Inverter Motor Top Load</p>
+            <p class="sub-adv">
+               Wobble Tech Gentle Wash!</p>
+            <a href=""><!--link to direct product-->
+              <h4>Buy Now</h4>
+             </a>
+          </div>
           <div class="swiper-slide">
             <img src="./img/washing machine A .webp" alt="" srcset="">
+            <p>6.0 kg Semi Automatic Washing Machine.</p>
+            <a href="">
+              <h4  id="fbutton">Buy Now</h4>  
+                <script>
+                $(document).ready(function(){
+                    $("#fbutton").click(function(){
+                      alert("Out Of Stock!!!");
+                    });
+                  })</script>
+            </a>
           </div>
         </div>
         <div class="swiper-button-next"></div>

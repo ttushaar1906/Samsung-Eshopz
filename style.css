@@ -221,11 +221,6 @@ footer .menu p{
     color: #f0eded;
  }
 
- 
-
-    
-    
-
 /* ######### Contain US ############ */
 
 .contant-section img{
@@ -407,6 +402,8 @@ footer .menu p{
     margin: 2rem;
 }
 
+ 
+
 .phones-section .phones-link{
     /* border: 5px solid red; */
     display: flex;
@@ -473,7 +470,7 @@ footer .menu{
   top: 70%;
   left: 15%;
   background-color:black;
-  color: white;
+  color:white;
   border-radius: 80px;
   padding: 1rem;
   font-weight: 300;
@@ -497,6 +494,45 @@ footer .menu{
     font-size: 1.5rem;
     top: 62%;
     left: 12%;
+}
+/* ########### Accessiors ########## */
+.ear-ac img{
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    margin-top:2rem ;
+    width: 100%;
+  }
+
+  .ear-ac p{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .ear-ac .sub-adv{
+  position: absolute;
+  font-size: 1.5rem;
+  top: 43%;
+  left: 12%;
+}
+.ear-ac h4{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color:black;
+    color:white;
+    border-radius: 80px;
+    padding: 1rem;
+    font-weight: 300;
+  }
+.ear-ac h4:hover{
+    background-color: #4098e0;
+    color: #000;
+    font-weight: bold;
 }
  /* ################ Earbuds ########## */
  .devices-section{
