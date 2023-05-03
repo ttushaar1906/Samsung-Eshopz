@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,123 +12,124 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Samsung E-Shop |</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-             <!-- //logo// -->
-                 <div class="logo">
-                     <img src="img/logo.png" alt="logo">
-                 </div>
+                <!-- //logo// -->
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
                 <!-- // home contant about /// -->
-              <ul class="nav-items">
-                     <li class="nav-item"><a href="./home.html">Home</a></li>
-                     <li class="nav-item"><a href="./aboutus.html">About Us</a></li>
-                     <li class="nav-item"><a href="./contantus.html">Contant Us</a></li>
-                     <li class="nav-item"><a href="./index.html"> <i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="./home.html">Home</a></li>
+                    <li class="nav-item"><a href="./aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a href="./contantus.html">Contant Us</a></li>
+                    <li class="nav-item"><a href="./index.html"> <i class="fa-solid fa-right-from-bracket"></i></a></li>
                 </ul>
-             </nav>
-             <section>
- <!-- Swiper -->
- <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./img/home tv A.webp" alt="tv">
-        <p> Neo QLED 4K Smart TV</p>
-            <p class="sub-adv">
-            Starting from Rs 80990.00</p>
-            <a href="./tv.html">
-            <h4>Buy Now</h4>
-            </a>
-      </div>
+            </nav>
+            <section>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/home tv A.webp" alt="tv">
+                            <p> Neo QLED 4K Smart TV</p>
+                            <p class="sub-adv">
+                                Starting from Rs 80990.00</p>
+                            <a href="./tv.html">
+                                <h4>Buy Now</h4>
+                            </a>
+                        </div>
 
-      <div class="swiper-slide">
-        <img src="./img/home ref A.webp" alt="ref" srcset="">
-        <p> 324L Twin Cooling Plus</p>
-        <p class="sub-adv">
-            2X longer freshness
-        </p>
-            <a href="">
-                <h4  id="fbutton">Buy Now</h4>  
+                        <div class="swiper-slide">
+                            <img src="./img/home ref A.webp" alt="ref" srcset="">
+                            <p> 324L Twin Cooling Plus</p>
+                            <p class="sub-adv">
+                                2X longer freshness
+                            </p>
+                            <a href="">
+                                <h4 id="fbutton">Buy Now</h4>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#fbutton").click(function () {
+                                            alert("Out Of Stock!!!");
+                                        });
+                                    })</script>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/home phone a.webp" alt="home" srcset="">
+                            <p>Samsung Galaxy S Series</p>
+                            <p class="sub-adv">
+                                Starting from Rs 52999.00</p>
+                            <a href="./galaxy S.html">
+                                <h4>Buy Now</h4>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/home washing machine A.webp" alt="washing machine" srcset="">
+                            <p> Samsung Washing Machines</p>
+                            <p class="sub-adv">
+                                Starting from Rs 80990.00</p>
+                            <a href="./washing.html">
+                                <h4>Buy Now</h4>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/home phone 2 a.webp" alt="phone flod" srcset="">
+                            <p>Samsung Galaxy Z Series</p>
+                            <p class="sub-adv">
+                                Starting from Rs 89999.00</p>
+                            <a href="./galaxy S.html">
+                                <h4>Buy Now</h4>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/home watches.webp" alt="Watches" srcset="">
+                            <p> Samsung Earbuds & Accessories</p>
+                            <p class="sub-adv">
+                                Starting from Rs 19999.00</p>
+                            <a href="./earbuds.html">
+                                <h4>Buy Now</h4>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
                 <script>
-                $(document).ready(function(){
-                    $("#fbutton").click(function(){
-                      alert("Out Of Stock!!!");
+                    var swiper = new Swiper(".mySwiper", {
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
                     });
-                  })</script>
-            </a>
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/home phone a.webp" alt="home" srcset="">
-        <p>Samsung Galaxy S Series</p>
-            <p class="sub-adv">
-            Starting from Rs 52999.00</p>
-            <a href="./galaxy S.html">
-            <h4>Buy Now</h4>
-          </a>
-      </div>
+                </script>
+            </section>
 
-      <div class="swiper-slide">
-        <img src="./img/home washing machine A.webp" alt="washing machine" srcset="">
-        <p> Samsung Washing Machines</p>
-            <p class="sub-adv">
-            Starting from Rs 80990.00</p>
-            <a href="./washing.html">
-            <h4>Buy Now</h4>
-            </a>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="./img/home phone 2 a.webp" alt="phone flod" srcset="">
-        <p>Samsung Galaxy Z Series</p>
-        <p class="sub-adv">
-        Starting from Rs 89999.00</p>
-        <a href="./galaxy S.html">
-        <h4>Buy Now</h4>
-      </a>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="./img/home watches.webp" alt="Watches" srcset="">
-        <p> Samsung Earbuds & Accessories</p>
-            <p class="sub-adv">
-            Starting from Rs 19999.00</p>
-            <a href="./earbuds.html">
-            <h4>Buy Now</h4>
-            </a>
-      </div>
-      
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
- </section>
-                
-             <section class="main">
+            <section class="main">
                 <div class="container">
                     <div class="sub-main">
                         <h1 class="text-black">Collections</h1>
@@ -136,88 +138,94 @@
                     <div class="img-nav">
                         <div class="box box1">
                             <a href="./Phones.html"><img src="./img/Samsung phones.png" width="200px" alt="phones">
-                                <p>Phones</p></a>
-                            
+                                <p>Phones</p>
+                            </a>
+
                         </div>
                         <div class="box box2">
-                            <a href="./tv.html"><img src="./img/samsung tv.webp" alt="tv" >
-                                <p>Television</p></a>
-                            </div>
-                            <div class="box box3"> 
-                                <a href="./washing.html"><img src="./img/washing machine.webp" alt="washing">
-                                    <p>Washing Machine </p></a>
-                                </div>
-                                <div class="box box4">
-                                    <a href="./earbuds.html">
-                                        <img src="./img/ear.jpg" alt="Watch" width="200px">
-                                        <p>Wearable & Accessories</p>
-                                    </a>
-                                </div>
+                            <a href="./tv.html"><img src="./img/samsung tv.webp" alt="tv">
+                                <p>Television</p>
+                            </a>
+                        </div>
+                        <div class="box box3">
+                            <a href="./washing.html"><img src="./img/washing machine.webp" alt="washing">
+                                <p>Washing Machine </p>
+                            </a>
+                        </div>
+                        <div class="box box4">
+                            <a href="./earbuds.html">
+                                <img src="./img/ear.jpg" alt="Watch" width="200px">
+                                <p>Wearable & Accessories</p>
+                            </a>
+                        </div>
                         <div class="box box5">
-                            <a href="./Air Conditioners.html"><img src="./img/AC.webp" alt="AC" >
-                             <p>Air Conditioners</p></a> 
-                        </div>  
-                    </div>        
+                            <a href="./Air Conditioners.html"><img src="./img/AC.webp" alt="AC">
+                                <p>Air Conditioners</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-             </section>
+            </section>
         </div>
- </header>
- <section class="section-header">
-    <h1 class="text-black">Why Buy From Samsung</h1>
- </section>
-<section class="hsection">
-    <div class="query q1">
-        <h3>Live Product Demo</h3>
-        <p>Exclusive live interactive sessions at comfort of your home.
-        </p>
-    </div>
-    <div class="query q2">
-        <h3>Exchange</h3>
-        <p>Best online exchange value for your current phones, tablets and smartwatches.</p>
-    </div>
-    <div class="query q3">
-        <h3>Special edition</h3>
-        <p>Buy samsung.com special editions only available here.</p>
-    </div>
-</section>
+    </header>
+    <section class="section-header">
+        <h1 class="text-black">Why Buy From Samsung</h1>
+    </section>
+    <section class="hsection">
+        <div class="query q1">
+            <h3>Live Product Demo</h3>
+            <p>Exclusive live interactive sessions at comfort of your home.
+            </p>
+        </div>
+        <div class="query q2">
+            <h3>Exchange</h3>
+            <p>Best online exchange value for your current phones, tablets and smartwatches.</p>
+        </div>
+        <div class="query q3">
+            <h3>Special edition</h3>
+            <p>Buy samsung.com special editions only available here.</p>
+        </div>
+    </section>
 
 
-<div class="section-help">
-    <div class="hi">
-        <div class="h-img">
-            <img src="./img/help.jpg" alt="help" class="img-contant">
-            <a href="contantus.html"><h1>Learn More</h1></a>
+    <div class="section-help">
+        <div class="hi">
+            <div class="h-img">
+                <img src="./img/help.jpg" alt="help" class="img-contant">
+                <a href="contantus.html">
+                    <h1>Learn More</h1>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
 
 
 
 
-<section class="section-header">
-    <h1 class="text-black">
-        Rewards & Support
-    </h1>
- </section>
- <section class="hsection">
- <div class="query q1">
-     <h3>Samsung Rewards</h3>
-     <p>Don't Forget to sign in to your Samsung Account and earn reward points</p>
- </div>
- <div class="query q2">
-     <h3>Samsung Members</h3>
-     <p>Get exclusive rewards, superfast support and ignite your passion.</p>
- </div>
- <div class="query q3">
-     <h3>Warranty</h3>
-     <p>Register your product and find out what's covered.</p>
- </div>
- <div class="query q4">
-    <h3>Support</h3>
-    <p>Find the support you need for your Samsung Product.</p>
-</div>
-</section> 
+    <section class="section-header">
+        <h1 class="text-black">
+            Rewards & Support
+        </h1>
+    </section>
+    <section class="hsection">
+        <div class="query q1">
+            <h3>Samsung Rewards</h3>
+            <p>Don't Forget to sign in to your Samsung Account and earn reward points</p>
+        </div>
+        <div class="query q2">
+            <h3>Samsung Members</h3>
+            <p>Get exclusive rewards, superfast support and ignite your passion.</p>
+        </div>
+        <div class="query q3">
+            <h3>Warranty</h3>
+            <p>Register your product and find out what's covered.</p>
+        </div>
+        <div class="query q4">
+            <h3>Support</h3>
+            <p>Find the support you need for your Samsung Product.</p>
+        </div>
+    </section>
 
 
 
@@ -225,17 +233,20 @@
 
 
 
-<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="social-media">
                 <a href="https://www.instagram.com/samsung/"><i class="fa-brands fa-instagram fa-1x"></i></a>
                 <a href="https://twitter.com/SamsungMobile"><i class="fa-brands fa-twitter fa-1x"></i></a>
                 <a href="https://www.facebook.com/SamsungIndia/"><i class="fa-brands fa-facebook fa-1x"></i></a>
-                <a href="https://www.youtube.com/channel/UCWwgaK7x0_FR1goeSRazfsQ"><i class="fa-brands fa-youtube fa-1x"></i></a>
-                <a href="https://in.linkedin.com/company/samsung-electronics"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+                <a href="https://www.youtube.com/channel/UCWwgaK7x0_FR1goeSRazfsQ"><i
+                        class="fa-brands fa-youtube fa-1x"></i></a>
+                <a href="https://in.linkedin.com/company/samsung-electronics"><i
+                        class="fa-brands fa-linkedin fa-1x"></i></a>
             </div>
             <p>Samsung E-Shopz &copy; 1995-2023, All Rights Reserve</p>
         </div>
     </footer>
 </body>
-</html> 
+
+</html>
