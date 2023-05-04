@@ -35,7 +35,12 @@
         li {
             list-style: none;
         }
-
+        h3{
+            background-color: #4099e0;
+            padding: 0.5rem;
+            margin: 1rem;
+            color: white;
+        }
         body {
             display: flex;
             justify-content: center;
@@ -195,19 +200,16 @@
                 <p>SignUp Panel</p>
             </div>
             <div class="form">
-                <!-- <form action="/signup" method="post"> -->
-                    <!-- {{!-- <select name="role">
-                        <option disabled selected>----- Select Your Role -----</option>
-                        <option value="Administrator" id="role">Administrator</option>
-                        <option value="Teacher" id="role">Teacher</option>
-                    </select> --}} -->
+                <form action="/" method="post">
                     <label for="name">Username</label>
                     <input type="text" name="name" id="name" required>
                     <label for="email">Enter Email Id</label>
                     <input type="email" name="email" id="email" required>
                     <label for="password">Enter Password</label>
                     <input type="password" name="password" id="password" required>
-                    <a href="./home.html"><input type="submit" value="SignUp" class="login_btn" id="btn-log" style="cursor: pointer;"> <script>
+                    <a href="./home.html">
+                       <h3> Sign Up</h3>
+                        <script>
                         $(document).ready(function(){
                             $("#btn-log").click(function(){
                               alert("Account Created!!!");
