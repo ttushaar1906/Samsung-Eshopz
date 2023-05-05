@@ -628,7 +628,7 @@ footer .menu{
 .sub-buy .p1{
     margin: 1rem;
     font-weight: bolder;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 2.5rem;
 }
 .sub-buy .p2{
@@ -645,12 +645,17 @@ footer .menu{
 }
 .sub-buy .p3{
     font-size: 1.6rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 1rem;
     font-weight: 300;
     padding: 1rem;
 }
 
+.sub-buy .p4{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-bottom: 3px solid black;
+}
 
 /* ######### responsive ########## */
         @media (max-width: 500px) {

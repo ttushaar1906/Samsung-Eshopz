@@ -1,3 +1,4 @@
+
 const mysql = require('mysql');
 const express = require('express');
 const app = express();
@@ -14,21 +15,24 @@ connection.connect((err) => {
     if (err) throw err;
     console.log("Database connected");
 });
+
 app.get('/',function(req,resp){
     resp.sendFile(__dirname + "/index.html");
-    // resp.sendFile(__dirname = "/styling");
+})
+
+app.get('/signup',function(req,resp){
+    resp.sendFile(__dirname + "/signup.html");
 })
 app.get('/login',function(req,resp){
-    resp.sendFile(__dirname + "/home.html");
-    // resp.sendFile(__dirname = "/styling");
+    resp.sendFile(__dirname +"/home.html")
 })
-app.post('/login',(req,resp)=>{
-    // const user_id = req.body.user_id;
-    // console.log(user_id)
+app.post('/signup',(req,resp)=>{
+    const username = req.body.username;
+    console.log(username)
     const email = req.body.email;
     const password = req.body.password;
 
-connection.query('INSERT INTO users ( email, password) VALUES (?, ?)', [email,password], (error, results, fields) => {
+connection.query('INSERT INTO signup ( username,email, password) VALUES (?,?, ?)', [username,email,password], (error, results, fields) => {
     if (error) {
         console.error(error);
     } else {
@@ -37,4 +41,5 @@ connection.query('INSERT INTO users ( email, password) VALUES (?, ?)', [email,pa
 });
 })
 
-app.listen(1926)
+// connection.end();
+app.listen(1928)

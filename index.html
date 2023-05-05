@@ -7,7 +7,177 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" href="./styling.css/login style.css">
+    <!-- <link rel="stylesheet" href="./"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+    /* ------- Colors ------- */
+    --primary-color: #4099e0;
+    --first-color: #56a5eb;
+    --second-color: #e3e2e2;
+    --third-color: #00cc39;
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #aaa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 90px;
+    border-radius: 25% 10%;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .form_content h1 {
+    color: var(--primary-color);
+}
+
+.container .form_content .bx {
+    font-size: 80px;
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.container .form_content p {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.container img {
+    width: 520px;
+    height: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction:
+        column;
+}
+
+.form_content .form select {
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form_content .form input,
+.form_content .form select {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:
+        2px solid var(--second-color);
+    text-align: center;
+    font-size: 14px;
+}
+
+.login_btn {
+    margin-top: 20px;
+   padding: 10px;
+    border-radius: 10px;
+    background: var(--first-color);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+/* .image_content img{
+    background: url('/img/login\ pg.png');
+} */
+.login_btn:hover {
+    background:
+        var(--primary-color);
+}
+
+.form_content .form label {
+    margin: 8px 0;
+    color: var(--primary-color);
+}
+
+.container .form .signUp_btn {
+    color: var(--first-color);
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    body{
+        background: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .container img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .container .form_content h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    body{
+        background: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .container img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .container .form_content h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+}
+    </style>
 
 </head>
 
@@ -15,7 +185,7 @@
     <div class="container">
         <div class="image_content">
             <!-- <img src="" alt=""> -->
-            <img src="./img/login pg.png" alt="login_img" />
+            <img src="https://i.postimg.cc/yxRkTxm0/login-pg.png" alt="login_img" />
         </div>
         <div class="form_content">
             <div>
@@ -24,18 +194,20 @@
                 <p>Login Panel</p>
             </div>
             <div class="form">
-                <form action="" method="post">
+                <form action="/login" method="post">
+                    <!-- <label for="user_id">Enter Mobile Number</label>
+                    <input type="number" name="user_id" id="user_id" required/> -->
                     <label for="email">Enter Email Id</label>
                     <input type="email" name="email" id="email" required/>
                     <label for="password">Enter Password</label>
                     <input type="password" name="password" id="password" required/>
                     
                         <!-- <button class="login_btn"><a href="./home.html">Login</button></a> -->
-                       <a href="./home.html"> 
-                        <input type="" value="Login"  class="login_btn" style="cursor: pointer;">
-                    </a>
-                </form> 
-                <a href="./signup.html" class="signUp_btn">Don't have an account? Sign up</a>
+                       <!-- <a href="./home.html">  -->
+                        <input type="submit" value="Login"  class="login_btn" style="cursor: pointer;">
+                    <!-- </a> -->
+                </form>
+                <a href="signup" class="signUp_btn">Don't have an account? Sign up</a>
             </div>   
         </div>
     </div>
