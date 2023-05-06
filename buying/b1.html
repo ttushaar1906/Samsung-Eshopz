@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="../conform.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <title>Samsung E-Shopz | Shopping</title>
     <link rel="stylesheet" href="../styling.css/style.css">
     <style>
@@ -30,7 +33,38 @@
            <p class="p3">Samsung Galaxy S23 Ultra 5G`a 6.8 inches Dynamic AMOLED display features a pixel density of 501ppi along with a resolution of 1440 x 3008 pixels and an aspect ratio of 20:9. This bezel-less display also flaunts a refresh rate of 120Hz layered with a Corning Gorilla Glass.</p>
         </div>
         <div class="cust-info">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae ad, voluptate assumenda quibusdam mollitia voluptatum praesentium veniam commodi incidunt fugit aliquid id laudantium iure sint quo corrupti repellat, eveniet, asperiores laborum quisquam! Iste repellat maiores officia amet, hic modi maxime aliquid. Veniam officia officiis nostrum natus rem dicta saepe architecto explicabo. At itaque, consequatur illo officia debitis quam aliquam, possimus nam voluptatibus earum deserunt pariatur non, dolore ea excepturi ut quos ullam! Similique vel temporibus rem. Doloribus quaerat eligendi expedita adipisci facilis sed id ea, fugiat reiciendis optio voluptates quasi molestiae minus laudantium similique. Sunt quaerat molestiae numquam fugiat!</p>
+            <div class="buy_head">
+                <h1>Customers Info</h1>
+            </div>
+            <div class="buy_final">
+                <form>
+                <label>Customers Names:</label>
+                <input type="text" placeholder="Enter Your Name" required><br>
+                <label>Customers Mobile Number:</label>
+                <input type="Number" placeholder="Enter Mobile Number" required><br>
+                <label>Customers E-mail</label>
+                <input type="email" placeholder="Enter E-mail" required><br>
+                <!-- <label for="Payments">Choose Payment Method:</label>
+                <select name="cars" id="cars">
+                  <option value="Cash On Delivery">Cash On Delivery</option>
+                  <option value="UPI">UPI</option>
+                </select><br> -->
+                <label for="Product">Choose Your product:</label>
+                <select name="Phones" id="galaxy S23 ultra 5g">
+                  <option value="galaxy S23 ultra 5g">Galaxy S23 ultra 5g</option><br></select>
+                  <!-- <option value="UPI">UPI</option>
+                </select><br> --><br>
+                <label>Customers Address:</label>
+                <textarea placeholder="Enter Address"></textarea required><br>
+                <button class="con">Submit</button>
+                <script>
+                    $(document).ready(function () {
+                        $(".con").click(function () {
+                            alert("Order Placed Successfully");
+                        });
+                    })</script>
+                </form>
+            </div>
         </div>
     </div>
     
