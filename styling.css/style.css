@@ -657,6 +657,44 @@ footer .menu{
     border-bottom: 3px solid black;
 }
 
+
+.cust-info{
+    display: flex;
+    flex-direction: column;
+}
+.cust-info .buy_head{
+    border-bottom: 3px solid #4098e0;
+    /* display: block; */
+    /* padding: 1rem;
+    margin: 1rem; */
+}
+.cust-info .buy_final{
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cust-info .buy_final input{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+.cust-info .buy_final textarea{
+    margin: auto;
+}
+.cust-info .buy_final select{
+ margin: 1rem;
+    /* padding: 1rem; */
+}
+.cust-info .buy_final button{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.cust-info .buy_final button:hover{
+    background-color: #4098e0;
+}
+
 /* ######### responsive ########## */
         @media (max-width: 500px) {
             .swiper .swiper-wrapper .swiper-slide p{
