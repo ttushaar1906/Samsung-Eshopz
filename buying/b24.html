@@ -5,17 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/Dm3JcbzT/samsung_logo.png">
+    <title>Samsung E-Shopz | Shopping</title>
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/C5cmSCxC/samsung_logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".oos").click(function () {
-                alert("Out Of Stock!!!");
-            })
-        })
-    </script>
-    <title>Samsung E-Shop | Wearable & Accessories</title>
     <style>
         /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
         * {
@@ -111,13 +104,10 @@
 
 
         .img-nav {
-            /* border: 2px solid black; */
             margin-top: 2rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            /* align-items: center; */
-
         }
 
         .img-nav .box img {
@@ -755,6 +745,9 @@
 
         .cust-info .buy_head {
             border-bottom: 3px solid #4098e0;
+            /* display: block; */
+            /* padding: 1rem;
+    margin: 1rem; */
         }
 
         .cust-info .buy_final {
@@ -775,6 +768,7 @@
 
         .cust-info .buy_final select {
             margin: 1rem;
+            /* padding: 1rem; */
         }
 
         .cust-info .buy_final button {
@@ -826,7 +820,6 @@
                 background: #c0c4c4;
                 display: flex;
                 flex-wrap: wrap;
-                /* flex-direction: column; */
                 border: 2px solid black;
                 margin: 1rem;
                 padding: 0.5rem;
@@ -849,7 +842,6 @@
                 justify-content: space-around;
                 width: 100%;
                 padding: 2rem;
-                /* margin: 1rem; */
             }
 
             .hsection .query {
@@ -1104,7 +1096,6 @@
                 justify-content: space-around;
                 width: 100%;
                 padding: 2rem;
-                /* margin: 1rem; */
             }
 
             .hsection .query {
@@ -1290,154 +1281,67 @@
                 display: flex;
             }
         }
+
+        body {
+            background-color: #76bffa;
+            ;
+        }
     </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <!-- //logo// -->
-                <div class="logo">
-                    <img src="https://i.postimg.cc/rFgvwWPP/logo.png" alt="logo">
-                </div>
-                <!-- // home contant about /// -->
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="home">Home</a></li>
-                    <li class="nav-item"><a href="aboutus">About Us</a></li>
-                    <li class="nav-item"><a href="contantus">Contant Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="ear-ac">
-        <img src="https://i.postimg.cc/YSJcwHs2/home_watch_a.webp">
-        <p>Offers so fab everyone will grab.</p>
-        <p class="sub-adv">
-            Get Heavy Discounts !</p>
-        <a href="/buying/b21">
-            <h4>Buy Now</h4>
-        </a>
+    <div class="buy-nav">
+        <a href="/earbuds"><i class="fa-solid fa-backward fa-1x"></i></a>
+        <h1>Shopping Cart</h1>
     </div>
+    <div class="buy-container">
+        <div class="sub-buy">
+            <img src="https://i.postimg.cc/YqCJpy2Q/galaxy-buds-2.webp" alt="" srcset="">
+            <p class="p-heading">Galaxy Buds2</p>
+
+            <p class="price">Rs.7999.00</p>
+            <p class="p4">About this item</p>
+
+            <p class="p3"><b>.</b>24-bit Hi-Fi audio. The upgraded Samsung Seamless Codec encodes the full 24-bit audio
+                and is decoded via Galaxy Buds2 Pro, maintaining that same 24-bit high-quality sound. (Samsung Galaxy
+                device with One UI version 4.0 or higher required for 24-bit audio).</p>
+
+            <p class="p3"><b>.</b>Intelligent ANC puts your playlist in focus. With 3 high SNR (Signal-to-Noise Ratio)
+                microphones, Galaxy Buds2 Pro track and eliminate more outside sound — even soft sounds like wind.
+                Switching to in-person conversations is easy with Voice Detect. Simply start talking and Voice Detect
+                will turn off ANC and activate Ambient sound — allowing you to clearly hear the conversation without
+                removing your Buds2 Pro</p>
+        </div>
+        <div class="cust-info">
+            <div class="buy_head">
+                <h1>Customers Info</h1>
+            </div>
+            <div class="buy_final">
+                <form>
+                    <label>Customers Names:</label>
+                    <input type="text" placeholder="Enter Your Name" required><br>
+                    <label>Customers Mobile Number:</label>
+                    <input type="Number" placeholder="Enter Mobile Number" required><br>
+                    <label>Customers E-mail</label>
+                    <input type="email" placeholder="Enter E-mail" required><br>
+                    <label for="Product">Choose Your product:</label>
+                    <select name="buds" id="Galaxy Buds 2">
+                        <option value="Galaxy Buds 2">Galaxy Buds 2</option><br>
+                    </select>
+                    <br>
+                    <label>Customers Address:</label>
+                    <textarea placeholder="Enter Address"></textarea required><br>
+                <button class="con">Submit</button>
+                <script>
+                    $(document).ready(function () {
+                        $(".con").click(function () {
+                            alert("Order Placed Successfully");
+                        });
+                    })</script>
+                </form>
+            </div>
+        </div>
     </div>
-    <section class="main">
-        <div class="container">
-            <div class="sub-main">
-                <h1 class="text-black">Get yourself a connected galaxy watch</h1>
-            </div>
-    </section>
-    <!-- ##### Items list ######### -->
-    <section class="devices-section">
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/CLyK4yMg/galaxy-watch4-LTE.webp" alt="Watch4" srcset="">
-            <h2>Galaxy Watch4 LTE</h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 19999.00</i>
-            <div class="buy-now">
-                <h2> Galaxy Watch5 Bluetooth (40mm)</h2>
-                <a href="/buying/b21"><button class="buy-now-btn">Buy Now</button></a>
-            </div>
-        </div>
-
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/9FGQ8xzq/galaxy-watch5.webp" alt="Galaxy5" srcset="">
-            <h2>Galaxy Watch5 </h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 27999.00</i>
-            <div class="buy-now">
-                <h2>Galaxy Watch5 Bluetooth (40mm) </h2>
-                <a href=""><button class="buy-now-btn oos">Buy Now</button></a>
-            </div>
-        </div>
-
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/FRMhGc4Z/galaxy-watch5-pro.webp" alt="Galaxy5 Pro" srcset="">
-            <h2>Galaxy Watch5 Pro</h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 44999.00</i>
-            <div class="buy-now">
-                <h2>Galaxy Watch5 Pro Bluetooth (45mm) </h2>
-                <a href="/buying/b22"><button class="buy-now-btn">Buy Now</button></a>
-            </div>
-        </div>
-    </section>
-    <!-- ############ Ear buds ############ -->
-    <section class="main">
-        <div class="container">
-            <div class="sub-main">
-                <h1 class="text-black">Your perfect companion with Galaxy Buds</h1>
-            </div>
-    </section>
-
-    <!-- ##### Items list ######### -->
-    <section class="devices-section">
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/65G97MCm/galaxy-buds2-pro.webp" alt="buds pro" srcset="">
-            <h2>Galaxy Buds2 Pro</h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 17999.00</i>
-            <div class="buy-now">
-                <h2> Galaxy Buds2 Pro
-                    Borapurple</h2>
-                <a href="/buying/b23">
-                    <button class="buy-now-btn">Buy Now</button></a>
-            </div>
-        </div>
-
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/pVm9ZYDD/galaxy-buds-live.webp" alt="buds live" srcset="">
-            <h2>Galaxy Buds Live</h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 5990.00</i>
-            <div class="buy-now">
-                <h2> Galaxy Buds Live
-                    Mystic Black</h2>
-                <a href=""><button class="buy-now-btn oos">Buy Now</button></a>
-            </div>
-        </div>
-
-        <div class="devices-display">
-            <img src="https://i.postimg.cc/4yYXQ5qn/galaxy-buds-2.webp" alt="buds live" srcset="">
-            <h2>Galaxy Buds 2</h2>
-            <i class="fa-solid fa-indian-rupee-sign fa-2x"> 7999.00</i>
-            <div class="buy-now">
-                <h2> Galaxy Buds2
-                    Graphite</h2>
-                <a href="/buying/b24">
-                    <button class="buy-now-btn">Buy Now</button></a>
-            </div>
-        </div>
-    </section>
-    <!-- ############ Footer ############ -->
-
-    <footer>
-        <div class="TandC">
-            <h3>
-                1)T&C apply. Image simulated. Offers may be revised or withdrawn without prior notice.<br>
-                2)EMI provided by Bank/NBFCs at their sole discretion (Financier TnC apply) and may vary model by model.
-                Final price at the sole discretion of the dealer.<br>
-                3)Cashback and benefits on bank/NBFC discretion and may vary model by model.<br>
-                4)App voucher provided by brand at its sole discretion and varies product by product. Products shown are
-                sold separately.<br>
-                5)F Series : Price shown is for 1 unit of Galaxy F13 64GB/4GB [SM-E135FZGD] after applying cashback &
-                app voucher discounts. First ever features in Galaxy F series. ^Qualcomm Snapdragon is a product of
-                Qualcomm Technologies, Inc. and/or its subsidiaries.<br>
-                6)M Series : Price shown is for 1 unit of Galaxy M04 64GB/4GB [SM-M045FDBG] after applying cashback &
-                app voucher discounts. 5G subject to network availability in India.<br>
-                7)A Series : Price shown is for 1 unit of Galaxy A14 128GB/6GB [SM-A146BDRH] after applying cashback &
-                app voucher discounts. ^Price shown is for 1 unit of Galaxy Buds2. ‘No Shake Cam’ is a creative
-                expression that signifies Optical Image Stabilization (OIS) feature that compensates for hand
-                tremors/movement.<br>
-            </h3>
-        </div>
-        <div class="menu">
-            <a href="home">Home</a> > Wearable & Accessories
-            <p> We Accept
-            <div class="social-media">
-                <i class="fa-brands fa-cc-visa fa-2x"></i>
-                <i class="fa-brands fa-google-pay fa-2x"></i>
-                <i class="fa-brands fa-cc-paypal fa-2x"></i>
-                <i class="fa-solid fa-credit-card fa-2x"></i>
-                </p>
-            </div>
-        </div>
-        </div>
-    </footer>
+    
 </body>
-
 </html>

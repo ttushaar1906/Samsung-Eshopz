@@ -55,8 +55,8 @@ app.get('/galaxy_z',function(req,resp){
 app.get('/galaxy_a',function(req,resp){
     resp.sendFile(__dirname + "/galaxy_a.html");
 })
-app.get('/galaxy_mf',function(req,resp){
-    resp.sendFile(__dirname + "/galaxy_mf.html");
+app.get('/galaxy_m',function(req,resp){
+    resp.sendFile(__dirname + "/galaxy_m.html");
 })
 // tv
 app.get('/tv',function(req,resp){
@@ -107,7 +107,60 @@ app.get('/buying/b11',function(req,resp){
 app.get('/buying/b12',function(req,resp){
     resp.sendFile(__dirname + "/buying/b12.html");
 })
-
+app.get('/buying/b13',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b13.html");
+})
+app.get('/buying/b14',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b14.html");
+})
+app.get('/buying/b15',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b15.html");
+})
+app.get('/buying/b16',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b16.html");
+})
+app.get('/buying/b17',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b17.html");
+})
+app.get('/buying/b18',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b18.html");
+})
+app.get('/buying/b19',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b19.html");
+})
+app.get('/buying/b20',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b20.html");
+})
+app.get('/buying/b21',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b21.html");
+})
+app.get('/buying/b22',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b22.html");
+})
+app.get('/buying/b23',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b23.html");
+})
+app.get('/buying/b24',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b24.html");
+})
+app.get('/buying/b25',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b25.html");
+})
+app.get('/buying/b26',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b26.html");
+})
+app.get('/buying/b27',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b27.html");
+})
+app.get('/buying/b28',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b28.html");
+})
+app.get('/buying/b29',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b29.html");
+})
+app.get('/buying/b30',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b30.html");
+})
 
 
 app.post('/login',(req,resp)=>{
