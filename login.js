@@ -246,6 +246,29 @@ app.get('/login',function(req,resp){
       res.sendFile(__dirname+"/home.html");
     });
   });
+
+
+
+
+  // order
+
+  app.post('/buy',(req,resp)=>{
+    const cust_name = req.body.cust_name;
+    console.log(cust_name);
+    const cust_mobileno = req.body.cust_mobileno;
+    const email = req.body.email;
+    const product_name = req.body.product_name;
+    const cust_address = req.body.cust_address;
+
+
+    connection.query('INSERT into buy_details ( cust_name,cust_mobileno, email, product_name,cust_address) VALUES (?, ?,?,?, ?)', [cust_name,cust_mobileno,email,product_name,cust_address], (error, results, fields) => {
+        if (error) {
+            console.error(error);
+        } else {
+            console.log('User has been added to the database.');
+        }
+    });
+});
 app.listen(1920);
 
 

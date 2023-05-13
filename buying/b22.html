@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samsung E-Shopz | Shopping</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/C5cmSCxC/samsung_logo.png">
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Samsung E-Shopz | Shopping</title>
     <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
         body {
             background-color: #76bffa;
             ;
         }
 
-        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
         * {
             padding: 0;
             margin: 0;
@@ -1329,36 +1330,51 @@
             <p class="p4">About this item</p>
             <p class="p3"><b>.</b>Galaxy Watch5 Pro Bluetooth (45mm)
             </p>
+            <center>
+                <p class="price
+                ">Payment On Delivery</p>
+            </center>
         </div>
         <div class="cust-info">
             <div class="buy_head">
                 <h1>Customers Info</h1>
             </div>
             <div class="buy_final">
-                <form>
-                    <label>Customers Names:</label>
-                    <input type="text" placeholder="Enter Your Name" required><br>
-                    <label>Customers Mobile Number:</label>
-                    <input type="Number" placeholder="Enter Mobile Number" required><br>
-                    <label>Customers E-mail</label>
-                    <input type="email" placeholder="Enter E-mail" required><br>
-                    <label for="Product">Choose Your product:</label>
-                    <select name="Watches" id="Galaxy Watch5 Pro">
-                        <option value="Galaxy Watch5 Pro">Galaxy Watch5 Pro</option><br>
-                    </select>
-                    <br>
-                    <label>Customers Address:</label>
-                    <textarea placeholder="Enter Address"></textarea required><br>
-                <button class="con">Submit</button>
-                <script>
-                    $(document).ready(function () {
-                        $(".con").click(function () {
-                            alert("Order Placed Successfully");
-                        });
-                    })</script>
-                </form>
+                <div class="form">
+                    <form action="/buy" method="post">
+                        <label for="cust_name">Customers Names:</label>
+                        <input type="text" placeholder="Enter Your Name" class="cust_name" name="cust_name"
+                            required><br>
+
+                        <label for="cust_mobileno">Customers Mobile Number:</label>
+                        <input type="Number" name="cust_mobileno" class="cust_mobileno"
+                            placeholder="Enter Mobile Number" required><br>
+
+                        <label for="email">Customers E-mail</label>
+                        <input type="email" class="email" name="email" placeholder="Enter E-mail" required><br>
+
+                        <label for="product_name">Choose Your product:</label>
+                        <select name="product_name" class="product_name">
+                            <option value="None" disabled>None</option><br>
+                            <option value="Galaxy Watch5 Pro">Galaxy Watch5 Pro</option><br>
+                        </select>
+                        <br>
+
+                        <label for="cust_address">Customers Address:</label>
+                        <textarea placeholder="Enter Address" name="cust_address" class="cust_address"
+                            required></textarea><br>
+                        <input type="submit" value="Buy" class="buy-now-btn" style="cursor: pointer;">
+                        <script>
+                            $(document).ready(function () {
+                                $(".buy-now-btn").click(function () {
+                                    alert("Order Placed Successfully");
+                                });
+                            })</script>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+
 </body>
+
 </html>
