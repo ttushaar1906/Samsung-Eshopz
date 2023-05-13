@@ -1,7 +1,13 @@
-const mysql = require('mysql');
 const express = require('express');
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+
 const app = express();
-app.use(express.urlencoded({ extended: true }));
+
+// // Update the middleware setup
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -15,14 +21,26 @@ connection.connect((err) => {
     console.log("Database connected");
 });
 
-// const username='tanaya';
-// const email='tanaya@gmail.com';
-// const password='tanaya';
-
+// Sign up logic
 
 app.get('/',function(req,resp){
     resp.sendFile(__dirname + "/index.html");
 })
+
+app.get('/signup',function(req,resp){
+    resp.sendFile(__dirname + "/signup.html");
+})
+app.get('/home',function(req,resp){
+    resp.sendFile(__dirname +"/home.html")
+})
+app.get('/signup',function(req,resp){
+    resp.sendFile(__dirname +"/home.html")
+})
+//home
+app.get('/Phones',function(req,resp){
+    resp.sendFile(__dirname + "/Phones.html");
+})
+
 app.get('/home',function(req,resp){
     resp.sendFile(__dirname + "/home.html");
 })
@@ -161,38 +179,21 @@ app.get('/buying/b29',function(req,resp){
 app.get('/buying/b30',function(req,resp){
     resp.sendFile(__dirname + "/buying/b30.html");
 })
-
-
-app.post('/login',(req,resp)=>{
-    const user_id = req.body.user_id;
-    console.log(user_id)
-    const email = req.body.email;
-    const password = req.body.password;
-
-
-connection.query('INSERT into users ( email, password) VALUES (?, ?)', [email,password], (error, results, fields) => {
-    // connection.query('INSERT INTO users ( email, password) VALUES (?, ?)', [email,password], (error, results, fields) => {  
-if (error) {
-        console.error(error);
-    } else {
-        console.log('User has been added to the database.');
-    }
-    resp.sendFile(__dirname + "/home.html");
-});
+app.get('/buying/b31',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b31.html");
+})
+app.get('/buying/b32',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b32.html");
+})
+app.get('/buying/b33',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b33.html");
+})
+app.get('/buying/b34',function(req,resp){
+    resp.sendFile(__dirname + "/buying/b34.html");
 })
 
-// Sign up logic
 
-app.get('/',function(req,resp){
-    resp.sendFile(__dirname + "/index.html");
-})
 
-app.get('/signup',function(req,resp){
-    resp.sendFile(__dirname + "/signup.html");
-})
-app.get('/login',function(req,resp){
-    resp.sendFile(__dirname +"/home.html")
-})
 app.post('/signup',(req,resp)=>{
     const username = req.body.username;
     console.log(username)
@@ -207,8 +208,41 @@ connection.query('INSERT into signup ( username, email, password) VALUES (?, ?, 
     } else {
         console.log('User has been added to the database.');
     }
+    resp.sendFile(__dirname+"/home.html") 
 });
 })
 
-app.listen(1929)
+
+
+
+
+// login
+  
+app.get('/',function(req,resp){
+    resp.sendFile(__dirname + "/index.html");
+})
+app.get('/home',function(req,resp){
+    resp.sendFile(__dirname + "/home.html");
+})
+app.get('/login',function(req,resp){
+    resp.sendFile(__dirname + "/home.html");
+})
+
+  app.post('/login', (req, res) => {
+    const { email, password } = req.body;
+    const query = 'SELECT * FROM signup WHERE email = ? AND password = ?';
+    connection.query(query, [email, password], (error, results) => {
+      if (error) {
+        console.error('Error executing query:', error);
+        return res.status(500).send('Server error');
+      }
+      if (results.length === 0) {
+        return res.status(401).send('Invalid credentials');
+      }
+      // Successful login
+      res.sendFile(__dirname+"/home.html");
+    });
+  });
+app.listen(1920);
+
 

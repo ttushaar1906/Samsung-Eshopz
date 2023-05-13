@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styling.css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/C5cmSCxC/samsung_logo.png">
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-
-    </script>
+        $(document).ready(function(){
+            $(".oos").click(function(){
+              alert("Out Of Stock!!!");
+            });
+          })
+        </script>
+    
     <title>Samsung E-Shop | Washing Machines</title>
     <style>
       /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
@@ -101,12 +104,10 @@ a{
 
 
 .img-nav{
-    /* border: 2px solid black; */
     margin-top: 2rem;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* align-items: center; */
 
 }
  .img-nav .box img{
@@ -248,7 +249,6 @@ footer .menu p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* border: 3px solid red; */
     padding: 3rem;
     justify-content: space-evenly;
     align-items: center;
@@ -258,10 +258,8 @@ footer .menu p{
     margin-top: 2rem;
     padding: 1rem;
     flex-basis: 50%;
-    /* border: 3px solid blue; */
 }
 .form-wraper .form-left img{
-    /* border: 2px solid black; */
     background-position: center;
     background-repeat:no-repeat;
     object-fit: cover;
@@ -269,15 +267,12 @@ footer .menu p{
     width: 100%;
 }
 .contant-form {
-    /* border: 2px solid green; */
     width: 50%;
 }
 .form-wraper .form{
-    /* height: 700px; */
     font-size: 1.6rem;
     background: #fff;
     width: 100%;
-    /* float: right; */
     padding: 1rem;
 }
 .form h1::after{
@@ -408,7 +403,6 @@ footer .menu p{
     margin-top: 2rem;
 }
 .phones-section .phone-display{
-    /* border: 2px solid black; */
     background-color: rgb(232, 232, 232);
     width: 25;
     padding: 2rem;
@@ -444,7 +438,6 @@ footer .menu{
 .swiper {
     width: 100%;
     height: 100%;
-    /* border: 2px solid red; */
     margin-top:2rem ;
   }
 
@@ -552,7 +545,6 @@ footer .menu{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 2rem;
-    /* width: 200px; */
  }
  .devices-section .devices-display{
   border: 2px solid black;
@@ -627,7 +619,6 @@ footer .menu{
 
 } 
 .buy-nav i{
-    /* justify-content: left; */
     margin: 1rem;
     padding: 1rem;
 }
@@ -635,7 +626,6 @@ footer .menu{
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    /* padding: 1rem; */
 }
 .sub-buy img{
     width: 400px;
@@ -645,14 +635,12 @@ footer .menu{
 .sub-buy .p1{
     margin: 1rem;
     font-weight: bolder;
-    /* border: 1px solid red; */
     font-size: 2.5rem;
 }
 .sub-buy .p2{
     font-size: 1.6rem;
     text-align: center;
     padding: 1rem;
-    /* display: inline-block; */
     font-weight: 500;
 }
 .sub-buy .price{
@@ -662,7 +650,6 @@ footer .menu{
 }
 .sub-buy .p3{
     font-size: 1.6rem;
-    /* border: 2px solid red; */
     padding: 1rem;
     font-weight: 300;
     padding: 1rem;
@@ -681,9 +668,6 @@ footer .menu{
 }
 .cust-info .buy_head{
     border-bottom: 3px solid #4098e0;
-    /* display: block; */
-    /* padding: 1rem;
-    margin: 1rem; */
 }
 .cust-info .buy_final{
     padding: 1rem;
@@ -700,7 +684,6 @@ footer .menu{
 }
 .cust-info .buy_final select{
  margin: 1rem;
-    /* padding: 1rem; */
 }
 .cust-info .buy_final button{
     padding: 1rem;
@@ -745,7 +728,6 @@ footer .menu{
                     background: #c0c4c4;
                     display: flex;
                     flex-wrap: wrap;
-                    /* flex-direction: column; */
                     border: 2px solid  black;
                     margin: 1rem;
                     padding: 0.5rem;
@@ -886,13 +868,11 @@ footer .menu{
             background-color:black;
             color:white;
             border-radius: 80px;
-            /* padding: 1rem; */
             font-weight: 300;
             font-size: 1rem;
           }
           .devices-section{
             display: block;
-            /* justify-content: center; */
             justify-content: space-evenly;
             flex-wrap: wrap;
             margin-top: 2rem;
@@ -962,7 +942,6 @@ footer .menu{
             background: #c0c4c4;
             display: flex;
             flex-wrap: wrap;
-            /* flex-direction: column; */
             border: 2px solid  black;
             margin: 1rem;
             padding: 0.5rem;
@@ -982,7 +961,6 @@ footer .menu{
             justify-content: space-around;
             width: 100%;
             padding: 2rem;
-            /* margin: 1rem; */
         }
         .hsection .query{
             width: 90%;
@@ -1104,17 +1082,14 @@ footer .menu{
         background-color:black;
         color:white;
         border-radius: 80px;
-        /* padding: 1rem; */
         font-weight: 300;
         font-size: 1rem;
       }
       .devices-section{
         display: block;
-        /* justify-content: center; */
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top: 2rem;
-        /* width: 200px; */
         width: 100%;
      }
      .devices-section .devices-display{
@@ -1157,7 +1132,7 @@ footer .menu{
                 <ul class="nav-items">
                   <li class="nav-item"><a href="home">Home</a></li>
                   <li class="nav-item"><a href="aboutus">About Us</a></li>
-                  <li class="nav-item"><a href="contantus">Contant Us</a></li>
+                  <li class="nav-item"><a href="contantus">Contact Us</a></li>
              </ul>
              </nav>
         </div>
@@ -1171,7 +1146,7 @@ footer .menu{
               <p>Offers so fab everyone will grab.</p>
         <p class="sub-adv">
        Get Heavy Discounts !</p>
-        <a href=""><!--link to direct product-->
+        <a href="/washing">
         <h4>Buy Now</h4>
       </a>
             </div>
@@ -1181,7 +1156,7 @@ footer .menu{
             <p>8.0 kg Ecobubble™ Front Load </p>
             <p class="sub-adv">
             Superior Ecobubble Cleaning</p>
-            <a href=""><!--link to direct product-->
+            <a href="/buying/b34"><!--link to direct product-->
             <h4>Buy Now</h4>
           </a>
           </div>
@@ -1191,9 +1166,9 @@ footer .menu{
             <p>7.0 kg Ecobubble™ Front Load </p>
             <p class="sub-adv">
             Superior AI Control</p>
-            <a href=""><!--link to direct product-->
-            <h4>Buy Now</h4>
-          </a>
+            <a href="">
+                <h4 class="oos">Buy Now</h4>  
+              </a>
         </div>
 
           <div class="swiper-slide">
@@ -1201,7 +1176,7 @@ footer .menu{
             <p>6.5 kg Inverter Motor Top Load</p>
             <p class="sub-adv">
                Wobble Tech Gentle Wash!</p>
-            <a href=""><!--link to direct product-->
+            <a href="/buying/b32">
               <h4>Buy Now</h4>
              </a>
           </div>
@@ -1209,13 +1184,7 @@ footer .menu{
             <img src="https://i.postimg.cc/YqjxQWSV/washing_machine_A.webp" alt="" srcset="">
             <p>6.0 kg Semi Automatic Washing Machine.</p>
             <a href="">
-              <h4  id="fbutton">Buy Now</h4>  
-                <script>
-                $(document).ready(function(){
-                    $("#fbutton").click(function(){
-                      alert("Out Of Stock!!!");
-                    });
-                  })</script>
+              <h4  class="oos">Buy Now</h4>  
             </a>
           </div>
         </div>
@@ -1271,13 +1240,13 @@ footer .menu{
     </div>
 
     <div class="devices-display">
-        <img src="https://i.postimg.cc/Y0DhpjKL/8-0-kg-Ecobubble-Top-Load-Washing-Machine.webp" alt="9.0 kg Ecobubble™ Top Load Washing Machine with Wi-Fi Connectivity," srcset="">
+        <img src="https://i.postimg.cc/3rZmLNjM/9-0-kg-Ecobubble-Top-Load-Washing-Machine-with-Wi-Fi-Connectivity.webp" alt="9.0 kg Ecobubble™ Top Load Washing Machine with Wi-Fi Connectivity," srcset="">
         <h2>9.0 kg Ecobubble™ Top Load Washing Machine with Wi-Fi Connectivity.</h2>
         <i class="fa-solid fa-indian-rupee-sign fa-2x">  24790.00
         </i>
         <div class="buy-now">
             <h2> 9.0 kg</h2>
-            <button class="buy-now-btn">Buy Now</button>
+            <a href="/buying/b32"><button class="buy-now-btn">Buy Now</button></a>
         </div> 
     </div>
 
@@ -1288,7 +1257,7 @@ footer .menu{
         </i>
         <div class="buy-now">
             <h2> 10.0 kg</h2>
-            <button class="buy-now-btn">Buy Now</button>
+            <a href="/buying/b33"><button class="buy-now-btn">Buy Now</button></a>
         </div> 
     </div>
  </section>
@@ -1302,13 +1271,13 @@ footer .menu{
 
 <section class="devices-section">
     <div class="devices-display">
-        <img src="https://i.postimg.cc/Gh94XPGF/9-0-kg-Ecobubble-Front-Load-Washing-Machine-with-AI-Control-Super-Speed-Hygiene-Steam-Smart-Thin.webp" alt="8.0 kg Washer Dryer Combo with AI Control & SmartThings Connectivity" srcset="">
+        <img src="https://i.postimg.cc/bJxkfNKt/8-0-kg-Washer-Dryer-Combo-with-AI-Control-Smart-Things-Connectivity.webp" alt="https://i.postimg.cc/bJxkfNKt/8-0-kg-Washer-Dryer-Combo-with-AI-Control-Smart-Things-Connectivity.webp" srcset="">
         <h2>8.0 kg Washer Dryer Combo with AI Control & SmartThings Connectivity.</h2>
         <i class="fa-solid fa-indian-rupee-sign fa-2x">  59000.00
         </i>
         <div class="buy-now">
             <h2> 8.0 kg</h2>
-            <button class="buy-now-btn">Buy Now</button>
+            <a href="/buying/b31"><button class="buy-now-btn">Buy Now</button></a>
         </div> 
     </div>
 
@@ -1330,7 +1299,7 @@ footer .menu{
         </i>
         <div class="buy-now">
             <h2> 9.0 kg</h2>
-            <button class="buy-now-btn">Buy Now</button>
+            <a href="/buying/b34"><button class="buy-now-btn">Buy Now</button></a>
         </div> 
     </div>
 
