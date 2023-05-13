@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
+        body {
+            background-color: #76bffa;
+            ;
+        }
+
         /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
         * {
             padding: 0;
@@ -276,7 +281,6 @@
             margin-top: 2rem;
             padding: 1rem;
             flex-basis: 50%;
-            /* border: 3px solid blue; */
         }
 
         .form-wraper .form-left img {
@@ -642,14 +646,14 @@
 
         /* ############# Buying ############# */
         .buy-container {
-            border: 2px solid black;
+            border: none;
             display: flex;
             justify-content: space-evenly;
             width: 100%;
         }
 
         .buy-container .sub-buy {
-            border: 2px solid blue;
+            border: none;
             display: flex;
             margin: 1rem;
             padding: 1rem;
@@ -659,7 +663,7 @@
         }
 
         .buy-container .cust-info {
-            border: 2px solid green;
+            border: none;
             display: flex;
             margin: 1rem;
             padding: 1rem;
@@ -672,7 +676,6 @@
             padding: 1rem;
             font-weight: bolder;
             display: inline-block;
-
         }
 
         .buy-nav i {
@@ -803,6 +806,7 @@
                 background: #c0c4c4;
                 display: flex;
                 flex-wrap: wrap;
+                /* flex-direction: column; */
                 border: 2px solid black;
                 margin: 1rem;
                 padding: 0.5rem;
@@ -825,6 +829,7 @@
                 justify-content: space-around;
                 width: 100%;
                 padding: 2rem;
+                /* margin: 1rem; */
             }
 
             .hsection .query {
@@ -969,6 +974,7 @@
                 background-color: black;
                 color: white;
                 border-radius: 80px;
+                /* padding: 1rem; */
                 font-weight: 300;
                 font-size: 1rem;
             }
@@ -1012,6 +1018,34 @@
                 padding: 1.5rem;
                 margin: auto;
                 display: flex;
+            }
+
+            .buy-container {
+                display: block;
+            }
+
+            .buy-nav .buy-container .sub-buy .p2 {
+                font-size: 4rem;
+            }
+
+            .buy-container {
+                display: block;
+                border: none;
+            }
+
+            .buy-container .sub-buy {
+                border: none;
+                display: block;
+                margin: 0%;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .buy-container .cust-info {
+                border: 2px solid black;
+                width: 100%;
+                padding: 5px;
+                margin: 0%;
             }
         }
 
@@ -1258,11 +1292,26 @@
                 margin: auto;
                 display: flex;
             }
-        }
 
-        body {
-            background-color: #76bffa;
-            ;
+            .buy-container {
+                display: block;
+                border: none;
+            }
+
+            .buy-container .sub-buy {
+                border: none;
+                display: block;
+                margin: 0%;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .buy-container .cust-info {
+                border: 2px solid black;
+                width: 100%;
+                padding: 5px;
+                margin: 0%;
+            }
         }
     </style>
 </head>

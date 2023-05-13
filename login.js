@@ -36,6 +36,9 @@ app.get('/home',function(req,resp){
 app.get('/signup',function(req,resp){
     resp.sendFile(__dirname +"/home.html")
 })
+app.get('/index',function(req,resp){
+    resp.sendFile(__dirname +"/index.html")
+})
 //home
 app.get('/Phones',function(req,resp){
     resp.sendFile(__dirname + "/Phones.html");

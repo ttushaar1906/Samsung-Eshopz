@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
+        body {
+            background-color: #76bffa;
+            ;
+        }
+
         /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap');*/
         * {
             padding: 0;
@@ -276,7 +281,6 @@
             margin-top: 2rem;
             padding: 1rem;
             flex-basis: 50%;
-            /* border: 3px solid blue; */
         }
 
         .form-wraper .form-left img {
@@ -642,14 +646,14 @@
 
         /* ############# Buying ############# */
         .buy-container {
-            border: 2px solid black;
+            border: none;
             display: flex;
             justify-content: space-evenly;
             width: 100%;
         }
 
         .buy-container .sub-buy {
-            border: 2px solid blue;
+            border: none;
             display: flex;
             margin: 1rem;
             padding: 1rem;
@@ -659,7 +663,7 @@
         }
 
         .buy-container .cust-info {
-            border: 2px solid green;
+            border: none;
             display: flex;
             margin: 1rem;
             padding: 1rem;
@@ -672,7 +676,6 @@
             padding: 1rem;
             font-weight: bolder;
             display: inline-block;
-
         }
 
         .buy-nav i {
@@ -803,6 +806,7 @@
                 background: #c0c4c4;
                 display: flex;
                 flex-wrap: wrap;
+                /* flex-direction: column; */
                 border: 2px solid black;
                 margin: 1rem;
                 padding: 0.5rem;
@@ -825,6 +829,7 @@
                 justify-content: space-around;
                 width: 100%;
                 padding: 2rem;
+                /* margin: 1rem; */
             }
 
             .hsection .query {
@@ -969,6 +974,7 @@
                 background-color: black;
                 color: white;
                 border-radius: 80px;
+                /* padding: 1rem; */
                 font-weight: 300;
                 font-size: 1rem;
             }
@@ -1012,6 +1018,34 @@
                 padding: 1.5rem;
                 margin: auto;
                 display: flex;
+            }
+
+            .buy-container {
+                display: block;
+            }
+
+            .buy-nav .buy-container .sub-buy .p2 {
+                font-size: 4rem;
+            }
+
+            .buy-container {
+                display: block;
+                border: none;
+            }
+
+            .buy-container .sub-buy {
+                border: none;
+                display: block;
+                margin: 0%;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .buy-container .cust-info {
+                border: 2px solid black;
+                width: 100%;
+                padding: 5px;
+                margin: 0%;
             }
         }
 
@@ -1258,11 +1292,26 @@
                 margin: auto;
                 display: flex;
             }
-        }
 
-        body {
-            background-color: #76bffa;
-            ;
+            .buy-container {
+                display: block;
+                border: none;
+            }
+
+            .buy-container .sub-buy {
+                border: none;
+                display: block;
+                margin: 0%;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .buy-container .cust-info {
+                border: 2px solid black;
+                width: 100%;
+                padding: 5px;
+                margin: 0%;
+            }
         }
     </style>
 </head>
@@ -1274,14 +1323,20 @@
     </div>
     <div class="buy-container">
         <div class="sub-buy">
-            <img src="https://i.postimg.cc/9F8ThkNJ/9-0-kg-Ecobubble-Front-Load-Washing-Machine-with-AI-Control-Super-Speed-Hygiene-Steam-Smart-Thin.webp" alt="https://i.postimg.cc/9F8ThkNJ/9-0-kg-Ecobubble-Front-Load-Washing-Machine-with-AI-Control-Super-Speed-Hygiene-Steam-Smart-Thin.webp" srcset="">
+            <img src="https://i.postimg.cc/9F8ThkNJ/9-0-kg-Ecobubble-Front-Load-Washing-Machine-with-AI-Control-Super-Speed-Hygiene-Steam-Smart-Thin.webp"
+                alt="https://i.postimg.cc/9F8ThkNJ/9-0-kg-Ecobubble-Front-Load-Washing-Machine-with-AI-Control-Super-Speed-Hygiene-Steam-Smart-Thin.webp"
+                srcset="">
             <p class="p-heading">9.0 kg Ecobubble™ Front Load Washing Machine with AI Control.
             </p>
             <p class="price">Rs.47000.00| 9.0 kg</p>
             <p class="p4">About this item</p>
-            <p class="p3"><b>.</b>Fully-automatic front load washing machine: Best Wash Quality, Energy and Water efficient.
+            <p class="p3"><b>.</b>Fully-automatic front load washing machine: Best Wash Quality, Energy and Water
+                efficient.
             </p>
-            <p class="p3"><b>.</b>For all Fully Automatic Washing Machines with Digital Inverter Motor, sold on or after 1st Dec 2022 (All Fully Automatic Front Load Washing Machine and Top Load Washing Machine) the Warranty period on the Digital Invertor Motor shall be revised from 10 years to 20 years and Comprehensive Product Warranty shall be be revised from 3 years to 2 years. 
+            <p class="p3"><b>.</b>For all Fully Automatic Washing Machines with Digital Inverter Motor, sold on or after
+                1st Dec 2022 (All Fully Automatic Front Load Washing Machine and Top Load Washing Machine) the Warranty
+                period on the Digital Invertor Motor shall be revised from 10 years to 20 years and Comprehensive
+                Product Warranty shall be be revised from 3 years to 2 years.
             </p>
         </div>
         <div class="cust-info">
@@ -1297,8 +1352,10 @@
                     <label>Customers E-mail</label>
                     <input type="email" placeholder="Enter E-mail" required><br>
                     <label for="TV">Choose Your product:</label>
-                    <select name="9.0 kg Ecobubble™ Front Load Washing Machine with AI Control" id="9.0 kg Ecobubble™ Front Load Washing Machine with AI Controlr.">
-                        <option value="9.0 kg Ecobubble™ Front Load Washing Machine with AI Control.">9.0 kg Ecobubble™ Front Load Washing Machine with AI Control</option><br>
+                    <select name="9.0 kg Ecobubble™ Front Load Washing Machine with AI Control"
+                        id="9.0 kg Ecobubble™ Front Load Washing Machine with AI Controlr.">
+                        <option value="9.0 kg Ecobubble™ Front Load Washing Machine with AI Control.">9.0 kg Ecobubble™
+                            Front Load Washing Machine with AI Control</option><br>
                     </select>
                     <br>
                     <label>Customers Address:</label>
