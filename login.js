@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const { emit } = require('nodemon');
 
 const app = express();
 
@@ -270,6 +271,36 @@ app.get('/login',function(req,resp){
         }
     });
 });
+
+
+// feedback
+
+app.post('/feed',(req,resp)=>{
+    const user_name =req.body.user_name;
+    console.log(user_name);
+    const email =req.body.email;
+    console.log(email);
+
+    const user_mobileno =req.body.user_mobileno;
+    console.log(user_mobileno);
+    
+    const rating =req.body.rating;
+    console.log(rating);
+    const user_feedback =req.body.user_feedback;
+console.log(user_feedback);
+
+connection.query('INSERT into feedback ( user_name, email, user_mobileno, rating,user_feedback) VALUES (?, ?,?,?, ?)', [user_name,email,user_mobileno, rating ,user_feedback], (error, results, fields) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log('User has been added to the database.');
+    }
+});
+});
+
+
+
+
 app.listen(1920);
 
 
