@@ -240,7 +240,8 @@ app.get('/login',function(req,resp){
         return res.status(500).send('Server error');
       }
       if (results.length === 0) {
-        return res.status(401).send('Invalid credentials');
+        alert("Error No User Found!!")
+        return res.status(401).send('Error no User Found!!!');
       }
       // Successful login
       res.sendFile(__dirname+"/home.html");
