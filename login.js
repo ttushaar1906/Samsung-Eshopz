@@ -200,7 +200,6 @@ app.get('/buying/b34',function(req,resp){
 
 app.post('/signup',(req,resp)=>{
     const username = req.body.username;
-    console.log(username)
     const email = req.body.email;
     const password = req.body.password;
 
@@ -256,8 +255,7 @@ app.get('/login',function(req,resp){
 
   app.post('/buy',(req,resp)=>{
     const cust_name = req.body.cust_name;
-    console.log(cust_name);
-    const cust_mobileno = req.body.cust_mobileno;
+      const cust_mobileno = req.body.cust_mobileno;
     const email = req.body.email;
     const product_name = req.body.product_name;
     const cust_address = req.body.cust_address;
@@ -277,17 +275,10 @@ app.get('/login',function(req,resp){
 
 app.post('/feed',(req,resp)=>{
     const user_name =req.body.user_name;
-    console.log(user_name);
     const email =req.body.email;
-    console.log(email);
-
     const user_mobileno =req.body.user_mobileno;
-    console.log(user_mobileno);
-    
     const rating =req.body.rating;
-    console.log(rating);
     const user_feedback =req.body.user_feedback;
-console.log(user_feedback);
 
 connection.query('INSERT into feedback ( user_name, email, user_mobileno, rating,user_feedback) VALUES (?, ?,?,?, ?)', [user_name,email,user_mobileno, rating ,user_feedback], (error, results, fields) => {
     if (error) {
