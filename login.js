@@ -248,18 +248,14 @@ app.get('/login',function(req,resp){
     });
   });
 
-
-
-
   // order
 
   app.post('/buy',(req,resp)=>{
     const cust_name = req.body.cust_name;
-      const cust_mobileno = req.body.cust_mobileno;
+    const cust_mobileno = req.body.cust_mobileno;
     const email = req.body.email;
     const product_name = req.body.product_name;
     const cust_address = req.body.cust_address;
-
 
     connection.query('INSERT into buy_details ( cust_name,cust_mobileno, email, product_name,cust_address) VALUES (?, ?,?,?, ?)', [cust_name,cust_mobileno,email,product_name,cust_address], (error, results, fields) => {
         if (error) {
@@ -269,7 +265,6 @@ app.get('/login',function(req,resp){
         }
     });
 });
-
 
 // feedback
 
@@ -288,10 +283,4 @@ connection.query('INSERT into feedback ( user_name, email, user_mobileno, rating
     }
 });
 });
-
-
-
-
 app.listen(1920);
-
-
