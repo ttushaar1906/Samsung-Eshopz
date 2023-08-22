@@ -9,7 +9,6 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -196,14 +195,10 @@ app.get('/buying/b34',function(req,resp){
     resp.sendFile(__dirname + "/buying/b34.html");
 })
 
-
-
 app.post('/signup',(req,resp)=>{
     const username = req.body.username;
     const email = req.body.email;
     const password = req.body.password;
-
-
 
 connection.query('INSERT into signup ( username, email, password) VALUES (?, ?, ?)', [username,email,password], (error, results, fields) => {
     if (error) {
@@ -214,10 +209,6 @@ connection.query('INSERT into signup ( username, email, password) VALUES (?, ?, 
     resp.sendFile(__dirname+"/home.html") 
 });
 })
-
-
-
-
 
 // login
   
